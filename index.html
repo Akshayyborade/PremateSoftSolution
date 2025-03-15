@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premate Software Solutions - Custom Software & Web Development</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 100 100" width="50" height="50">
+                        <rect x="20" y="20" width="60" height="60" rx="10" fill="#4527a0" />
+                        <path d="M35 35 L65 35 L50 50 Z" fill="#ffffff" />
+                        <path d="M35 50 L65 50 L50 65 Z" fill="#7c4dff" transform="rotate(180 50 50)" />
+                        <circle cx="50" cy="50" r="10" fill="#ffffff" />
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <h1>PREMATE</h1>
+                    <p>SOFTWARE SOLUTIONS</p>
+                </div>
+            </div>
+            <div class="menu-btn" id="menuBtn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#tech">Technologies</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact" class="nav-cta">Get in Touch</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-subtitle">Software Development Experts</span>
+                <h1>Crafting Digital Excellence for Your Business</h1>
+                <p>From custom software solutions to responsive web applications, we bring your vision to life with
+                    cutting-edge technology and creative innovation.</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">Start Your Project</a>
+                    <a href="#portfolio" class="btn btn-secondary">View Our Work</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/images/hero-image.jpg" alt="Custom Software Development">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Custom Development</h3>
+                    <p>Tailored solutions built specifically for your unique business needs and challenges.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Responsive Design</h3>
+                    <p>Applications that work flawlessly across all devices and screen sizes.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Rapid Deployment</h3>
+                    <p>Efficient development cycle with continuous delivery and quick time-to-market.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Ongoing Support</h3>
+                    <p>Dedicated maintenance and enhancement services to keep your software evolving.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">What We Offer</span>
+                <h2 class="section-title">Our Digital Services</h2>
+                <p class="section-description">Comprehensive software solutions to transform your business operations.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="assets/images/web-development.jpg" alt="Custom Web Development">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Web Development</h3>
+                        <p>Dynamic websites and web applications with modern frameworks like React, Angular, and Spring Boot.</p>
+                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="assets/images/mobile-app.jpg" alt="Mobile App Development">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Mobile Applications</h3>
+                        <p>Native and cross-platform mobile apps that deliver exceptional user experiences on iOS and Android.</p>
+                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="assets/images/enterprise.jpg" alt="Enterprise Software">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Enterprise Solutions</h3>
+                        <p>Scalable and secure software systems for inventory management, CRM, ERP, and business operations.</p>
+                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="assets/images/ai-integration.jpg" alt="AI Integration">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>AI Integration</h3>
+                        <p>Enhance your applications with artificial intelligence capabilities, machine learning, and data analytics.</p>
+                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Our Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-description">Explore some of our successful client implementations.</p>
+            </div>
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                <button class="filter-btn" data-filter="enterprise">Enterprise</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="assets/images/project-chemtech.jpg" alt="Chemtech Website">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-buttons">
+                                <a href="#" class="portfolio-btn"><i class="fas fa-link"></i></a>
+                                <a href="#" class="portfolio-btn"><i class="fas fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Chemtech Coating Solutions</h3>
+                        <p>Responsive website for a premium epoxy coating business</p>
+                        <div class="portfolio-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="enterprise">
+                    <div class="portfolio-image">
+                        <img src="assets/images/project-management.jpg" alt="School Management System">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-buttons">
+                                <a href="#" class="portfolio-btn"><i class="fas fa-link"></i></a>
+                                <a href="#" class="portfolio-btn"><i class="fas fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>DnyanDeep Educational Platform</h3>
+                        <p>Comprehensive school management system with student tracking</p>
+                        <div class="portfolio-tags">
+                            <span>Spring Boot</span>
+                            <span>React</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="enterprise">
+                    <div class="portfolio-image">
+                        <img src="assets/images/question-generator.jpg" alt="AI Question Generator">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-buttons">
+                                <a href="#" class="portfolio-btn"><i class="fas fa-link"></i></a>
+                                <a href="#" class="portfolio-btn"><i class="fas fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>AI Question Paper Generator</h3>
+                        <p>Automated exam creation tool using AI for educational institutions</p>
+                        <div class="portfolio-tags">
+                            <span>Spring Boot</span>
+                            <span>React</span>
+                            <span>Gemini AI</span>
+                            <span>Redis</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-image">
+                        <img src="assets/images/ticket-app.jpg" alt="Rail Booking App">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-buttons">
+                                <a href="#" class="portfolio-btn"><i class="fas fa-link"></i></a>
+                                <a href="#" class="portfolio-btn"><i class="fas fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>RailConnect Booking System</h3>
+                        <p>Ticket reservation platform with real-time availability</p>
+                        <div class="portfolio-tags">
+                            <span>Java</span>
+                            <span>Hibernate</span>
+                            <span>Servlets</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="enterprise">
+                    <div class="portfolio-image">
+                        <img src="assets/images/jewelry-system.jpg" alt="Jewelry Management System">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-buttons">
+                                <a href="#" class="portfolio-btn"><i class="fas fa-link"></i></a>
+                                <a href="#" class="portfolio-btn"><i class="fas fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Jewelry Management System</h3>
+                        <p>Inventory and sales tracking for jewelry retailers</p>
+                        <div class="portfolio-tags">
+                            <span>Spring Boot</span>
+                            <span>JavaFX</span>
+                            <span>REST API</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="assets/images/ecommerce.jpg" alt="E-commerce Platform">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-buttons">
+                                <a href="#" class="portfolio-btn"><i class="fas fa-link"></i></a>
+                                <a href="#" class="portfolio-btn"><i class="fas fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Modern E-commerce Platform</h3>
+                        <p>Fully-featured online store with payment processing</p>
+                        <div class="portfolio-tags">
+                            <span>Spring Boot</span>
+                            <span>React</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section class="tech-stack" id="tech">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Our Tools</span>
+                <h2 class="section-title">Technologies We Master</h2>
+                <p class="section-description">Cutting-edge technologies that power our development process.</p>
+            </div>
+            <div class="tech-categories">
+                <div class="tech-category">
+                    <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <img src="assets/images/tech/react.svg" alt="React">
+                            <span>React</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/images/tech/angular.svg" alt="Angular">
+                            <span>Angular</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/images/tech/javascript.svg" alt="JavaScript">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/images/tech/html5.svg" alt="HTML5">
+                            <span>HTML5</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/images/tech/css3.svg" alt="CSS3">
+                            <span>CSS3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <img src="assets/images/tech/java.svg" alt="Java">
+                            <span>Java</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/images/tech/spring.svg" alt="Spring Boot">
+                            <span>Spring Boot</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/images/tech/node.svg" alt="Node.js">
+                            <span>Node.js</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/images/tech/hibernate.svg" alt="Hibernate">
+                            <span>Hibernate</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3><i class="fas fa-database"></i> Database</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <img src="assets/images/tech/mysql.svg" alt="MySQL">
+                            <span>MySQL</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/images/tech/mongodb.svg" alt="MongoDB">
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/images/tech/redis.svg" alt="Redis">
+                            <span>Redis</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3><i class="fas fa-tools"></i> DevOps & Tools</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <img src="assets/images/tech/git.svg" alt="Git">
+                            <span>Git</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/images/tech/docker.svg" alt="Docker">
+                            <span>Docker</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/images/tech/maven.svg" alt="Maven">
+                            <span>Maven</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/images/tech/intellij.svg" alt="IntelliJ IDEA">
+                            <span>IntelliJ IDEA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Who We Are</span>
+                <h2 class="section-title">About Premate Software Solutions</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="assets/images/team.jpg" alt="Premate Team">
+                    <div class="about-experience">
+                        <span class="years">5+</span>
+                        <span class="text">Years in Software</span>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>We Build Software That Transforms Businesses</h3>
+                    <p>Premate Software Solutions is a dynamic, innovation-driven software development company based in Mumbai. Founded by software engineers with a passion for solving complex business challenges, we deliver cutting-edge solutions that help our clients achieve their digital transformation goals.</p>
+                    <p>Our team combines technical expertise with industry knowledge to create software that not only meets your current needs but scales with your business. We pride ourselves on our collaborative approach, transparent communication, and commitment to delivering excellence in every project.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-text">Projects Delivered</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">25+</span>
+                            <span class="stat-text">Happy Clients</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-text">Team Members</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">Partner With Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Our Experts</span>
+                <h2 class="section-title">Meet Our Team</h2>
+                <p class="section-description">The talented professionals behind our success.</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="assets/images/team/akshay.jpg" alt="Akshay Borade">
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Akshay Borade</h3>
+                        <p>Founder & Lead Developer</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="assets/images/team/developer1.jpg" alt="Team Member">
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Rahul Sharma</h3>
+                        <p>Senior Backend Developer</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="assets/images/team/developer2.jpg" alt="Team Member">
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Priya Patel</h3>
+                        <p>Frontend Specialist</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="assets/images/team/developer3.jpg" alt="Team Member">
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Vikram Desai</h3>
+                        <p>UI/UX Designer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">How We Work</span>
+                <h2 class="section-title">Our Development Process</h2>
+                <p class="section-description">A structured approach to delivering exceptional software.</p>
+            </div>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Discovery</h3>
+                        <p>We thoroughly understand your business requirements and project goals through detailed consultations.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Planning</h3>
+                        <p>Our team creates a comprehensive development roadmap with timelines, technologies, and deliverables.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Development</h3>
+                        <p>Using agile methodologies, we build your solution with regular iterations and continuous feedback.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Testing</h3>
+                        <p>Rigorous quality assurance to ensure your application meets all technical and business requirements.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">05</div>
+                    <div class="step-content">
+                        <h3>Deployment</h3>
+                        <p>Smooth launch with technical support and training to ensure a successful implementation.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">06</div>
+                    <div class="step-content">
+                        <h3>Maintenance</h3>
+                        <p>Ongoing support, updates, and enhancements to keep your software performing optimally.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Client Feedback</span>
+                <h2 class="section-title">What Our Clients Say</h2>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-content">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p>Premate Software Solutions transformed our business operations with a custom management system that automated our workflows. Their team was professional, responsive, and delivered exactly what we needed on time and within budget.</p>
+                        <div class="client-info">
+                            <div class="client-name">Dnyandeep Tutorials</div>
+                            <div class="client-position">Educational Institution</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p>We partnered with Premate for our website redesign, and the results exceeded our expectations. The new site has significantly improved our customer engagement and online brand presence. Highly recommend their services!</p>
+                        <div class="client-info">
+                            <div class="client-name">Chemtech Coating Solutions</div>
+                            <div class="client-position">Manufacturing Company</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p>The AI-powered application that Premate developed for us has revolutionized our document processing. What used to take hours now takes minutes, and the system continues to improve over time. Their technical expertise is outstanding.</p>
+                        <div class="client-info">
+                            <div class="client-name">Global Logistics Ltd.</div>
+                            <div class="client-position">Supply Chain Management</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-dots">
+                <span class="testimonial-dot active" data-slide="0"></span>
+                <span class="testimonial-dot" data-slide="1"></span>
+                <span class="testimonial-dot" data-slide="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Digital Presence?</h2>
+                <p>Let's discuss how our software solutions can help your business grow and innovate.</p>
+                <a href="#contact" class="btn btn-light">Start Your Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Get In Touch</span>
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-description">Reach out to discuss your project or get more information about our services.</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Our Location</h3>
+                            <p>Mumbai, Maharashtra, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone Number</h3>
+                            <p>+91 7722055914</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email Address</h3>
+                            <p>info@prematesoftware.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Working Hours</h3>
+                            <p>Monday - Friday: 9am - 6pm</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 100 100" width="40" height="40">
+                            <rect x="20" y="20" width="60" height="60" rx="10" fill="#4527a0" />
+                            <path d="M35 35 L65 35 L50 50 Z" fill="#ffffff" />
+                            <path d="M35 50 L65 50 L50 65 Z" fill="#7c4dff" transform="rotate(180 50 50)" />
+                            <circle cx="50" cy="50" r="10" fill="#ffffff" />
+                        </svg>
+                    </div>
+                    <div class="logo-text">
+                        <h2>PREMATE</h2>
+                        <p>SOFTWARE SOLUTIONS</p>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#portfolio">Projects</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">Mobile Applications</a></li>
+                            <li><a href="#">Enterprise Solutions</a></li>
+                            <li><a href="#">AI Integration</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Support</h3>
+                        <ul>
+                            <li><a href="#contact">Contact Us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Newsletter</h3>
+                        <p>Subscribe to our newsletter for updates</p>
+                        <div class="newsletter-form">
+                            <input type="email" placeholder="Your Email">
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2025 Premate Software Solutions. All Rights Reserved.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
