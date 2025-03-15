@@ -1244,7 +1244,11 @@ footer {
     .about-content {
         flex-direction: column;
     }
-    
+    .about-experience {
+        position: absolute;
+        bottom: 30px;
+        right: -15px;
+    }
     .about-image, .about-text {
         width: 100%;
     }
@@ -1320,7 +1324,11 @@ footer {
         flex-direction: column;
         gap: 30px;
     }
-    
+    .about-experience {
+        position: absolute;
+        bottom: 30px;
+        right: -15px;
+    }
     .footer-links {
         flex-direction: column;
     }
@@ -1363,7 +1371,8 @@ footer {
     .about-experience {
         position: absolute;
         bottom: 30px;
-        right: -15px;}
+        right: -15px;
+    }
     
     .section-description {
         font-size: 15px;
@@ -1452,6 +1461,11 @@ footer {
     
     .hero h1 {
         font-size: 28px;
+    }
+    .about-experience {
+        position: absolute;
+        bottom: 30px;
+        right: -15px;
     }
     
     /* Simplify layouts further */
