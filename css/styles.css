@@ -502,9 +502,36 @@ header.scrolled {
 
 .hero-image {
     position: relative;
+    height: 500px;
     border-radius: var(--radius-lg);
     overflow: hidden;
-    box-shadow: var(--shadow-lg);
+    background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-darker) 100%);
+}
+
+.hero-image::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: 
+        radial-gradient(circle at 30% 20%, var(--primary-color) 0%, transparent 50%),
+        radial-gradient(circle at 70% 60%, var(--accent-color) 0%, transparent 50%),
+        radial-gradient(circle at 40% 80%, var(--primary-light) 0%, transparent 40%);
+    opacity: 0.15;
+    animation: pulseGradient 8s ease-in-out infinite;
+}
+
+.hero-image::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: 
+        linear-gradient(45deg, var(--glass-border) 25%, transparent 25%),
+        linear-gradient(-45deg, var(--glass-border) 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, var(--glass-border) 75%),
+        linear-gradient(-45deg, transparent 75%, var(--glass-border) 75%);
+    background-size: 20px 20px;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+    opacity: 0.03;
 }
 
 .hero-image img {
@@ -813,18 +840,32 @@ header.scrolled {
     overflow: hidden;
     transform: translateZ(20px);
     border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-darker) 100%);
 }
 
 .service-image::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, transparent 0%, var(--bg-dark) 100%);
-    z-index: 1;
-    opacity: 0.6;
+    inset: 0;
+    background: 
+        radial-gradient(circle at 0% 0%, var(--primary-color) 0%, transparent 50%),
+        radial-gradient(circle at 100% 100%, var(--accent-color) 0%, transparent 50%);
+    opacity: 0.1;
+    transition: var(--transition-normal);
+}
+
+.service-image::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: repeating-linear-gradient(
+        -45deg,
+        var(--glass-border) 0px,
+        var(--glass-border) 1px,
+        transparent 1px,
+        transparent 10px
+    );
+    opacity: 0.05;
 }
 
 .service-image img {
@@ -1085,6 +1126,31 @@ header.scrolled {
     position: relative;
     height: 250px;
     overflow: hidden;
+    background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-darker) 100%);
+}
+
+.portfolio-image::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: 
+        radial-gradient(circle at 30% 30%, var(--primary-color) 0%, transparent 60%),
+        radial-gradient(circle at 70% 70%, var(--accent-color) 0%, transparent 60%);
+    opacity: 0.1;
+    transition: var(--transition-normal);
+}
+
+.portfolio-image::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: 
+        repeating-conic-gradient(
+            var(--glass-border) 0deg 30deg,
+            transparent 30deg 60deg
+        );
+    background-size: 60px 60px;
+    opacity: 0.03;
 }
 
 .portfolio-image img {
@@ -1528,25 +1594,32 @@ header.scrolled {
 
 .about-image-wrapper {
     position: relative;
+    height: 500px;
     border-radius: var(--radius-lg);
     overflow: hidden;
-    box-shadow: var(--shadow-lg);
+    background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-darker) 100%);
 }
 
 .about-image-wrapper::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg, var(--primary-color) 0%, transparent 100%);
-    opacity: 0.1;
+    inset: 0;
+    background: 
+        radial-gradient(circle at 70% 30%, var(--primary-color) 0%, transparent 50%),
+        radial-gradient(circle at 30% 70%, var(--accent-color) 0%, transparent 50%);
+    opacity: 0.15;
     transition: var(--transition-normal);
 }
 
-.about-image:hover .about-image-wrapper::before {
-    opacity: 0.2;
+.about-image-wrapper::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: 
+        linear-gradient(var(--glass-border) 2px, transparent 2px),
+        linear-gradient(90deg, var(--glass-border) 2px, transparent 2px);
+    background-size: 30px 30px;
+    opacity: 0.03;
 }
 
 .about-image img {
@@ -1800,6 +1873,29 @@ header.scrolled {
     position: relative;
     height: 320px;
     overflow: hidden;
+    background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-darker) 100%);
+}
+
+.member-image::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: 
+        radial-gradient(circle at 50% 30%, var(--primary-color) 0%, transparent 70%),
+        radial-gradient(circle at 50% 80%, var(--accent-color) 0%, transparent 70%);
+    opacity: 0.1;
+    transition: var(--transition-normal);
+}
+
+.member-image::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: 
+        linear-gradient(45deg, var(--glass-border) 25%, transparent 25%),
+        linear-gradient(-45deg, var(--glass-border) 25%, transparent 25%);
+    background-size: 10px 10px;
+    opacity: 0.03;
 }
 
 .member-image img {
@@ -2595,5 +2691,96 @@ footer {
     .hero {
         min-height: auto;
         padding: 120px 0 60px;
+    }
+}
+
+/* Animations */
+@keyframes pulseGradient {
+    0%, 100% {
+        opacity: 0.15;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.2;
+        transform: scale(1.05);
+    }
+}
+
+/* Hover Effects */
+.service-card:hover .service-image::before,
+.portfolio-item:hover .portfolio-image::before,
+.team-member:hover .member-image::before,
+.about-image:hover .about-image-wrapper::before {
+    opacity: 0.2;
+    transform: scale(1.1);
+}
+
+/* Shape Decorations */
+.shape-decoration {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.shape-decoration::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 2px solid var(--glass-border);
+    border-radius: var(--radius-lg);
+    transform: rotate(45deg);
+    opacity: 0.1;
+}
+
+.shape-decoration::after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: var(--gradient-1);
+    filter: blur(50px);
+    opacity: 0.1;
+    border-radius: 50%;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .hero-image,
+    .about-image-wrapper {
+        height: 400px;
+    }
+
+    .service-image {
+        height: 180px;
+    }
+
+    .portfolio-image {
+        height: 200px;
+    }
+
+    .member-image {
+        height: 280px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hero-image,
+    .about-image-wrapper {
+        height: 300px;
+    }
+
+    .service-image {
+        height: 160px;
+    }
+
+    .portfolio-image {
+        height: 180px;
+    }
+
+    .member-image {
+        height: 240px;
     }
 }
